@@ -1,51 +1,96 @@
 ---
 layout: default
-title: Home
+title: Shromona Ghosh
 ---
 <header>
+  <center>
   <img alt="{{ site.name }} picture" src="{{ site.picture }}" />
 
   <h1>
     <strong><a href="./">{{ site.name }}</a></strong>
   </h1>
 
-  <p>
-    Some Cool Company</br>
-    Brazil, Barueri-SP</br>
-    Front-end Developer
-  </p>
-
   <nav>
     <ul>
-      <li><a href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
-      <li><a href="https://github.com/{{ site.github }}">Github</a></li>
-      <li><a href="mailto:{{ site.email }}">me AT jane DOT doe</a></li>
+      <li><a href="https://twitter.com/{{ site.twitter }}">twitter</a></li>
+      <li><a href="https://github.com/{{ site.github }}">github</a></li>
+      <li><a href="mailto:{{ site.email }}">email</a></li>
     </ul>
   </nav>
-
-  <small>
-    <a href="https://github.com/sergiokopplin/violet">Violet</a> theme
-    <br> inspired on <a href="http://cyberglot.me/">Ju Gonçalves</a>
-  </small>
+  </center>
 </header>
 
 <section class="content">
+  <h2>About</h2>
   <p>
-    Student at School of Code, creator of <a href="http://aweso.me/">Awesome</a>. Front-end Developer looking for responsive challenges. Programmer at <a href="https://google.com/search?q=cool+company">Cool Company</a>.
+    I am a PhD Candidate in the Electrical Engineering and Computer Science 
+    Department, University of California at Berkeley, advised by Prof. Alberto 
+    Sangiovanni-Vincentelli. Previously, I have interned at Texas Instruments 
+    (Summer 2012), Cadence Design Systems (Summer 2014) and MSR (Summer 2017).<br>
+    <br>
+    I am broadly interested in Safe Learning, Control Theory, Formal Methods, 
+    System Identification, Synthesis and Verification, Cyber Physical Systems 
+    and Data Driven Design.
   </p>
 
+  <h2>Projects</h2>
   <p>
-    Member of the <a href="https://google.com/search?q=big+bang+theory+show">The Big Band Theory</a>, playing drums with love. Recording a new disco inside my garage. Willing to be the new Slayer girl drummer. <a href="https://google.com/search?q=black+metal">Black Metal lover</a>.
+    <strong>System Identification from Data for Safe Learning</strong><br>
+    We are exploring the problem of modeling unknown dynamics in hybrid systems 
+    from historical and run time data while guaranteeing safety. We are 
+    considering both supervised and unsupervised learning based on the system 
+    domain. Due to the uncertainities in the unknown part of the system, we are 
+    looking into probabilitic models such as Markov Chains and Neural Networks 
+    and learnig specifications on the model in Probabilitic Signal Temporal 
+    Logic (PrSTL) which can be used for synthesis and verification purposes.<br>
+    <br>
+    <strong>Diagnosis and Repair of Specifications for Controller Synthesis</strong><br>
+    We diagnose failures expressed in Signal Temporal Logic in a reactive 
+    control algorithm. Our tool, DiaRY, identifies the causes of infeasibility 
+    in the specifications and provides minimal timing and predicate repairs to 
+    make the controller synthesis problem feasible. This work was presented in 
+    Hybrid Systems: Computation and Control, 2016.<br>
+    <br>
+    <strong>Requirement Engineering using Contracts</strong><br>
+    We are currently working on building a tool which could help us reason with 
+    contracts or specifications expressed in different mathematical formalisms 
+    (such as Linear Temporal Logic, Signal Temporal Logic). The tool would help 
+    the designer reason about the compatibility, consistency and realizability 
+    of specifications.<br>
+    <br>
+    <strong>Robust Online Monitoring of Signal Temporal Logic</strong><br>
+    We developed an Online Monitor in C++ for testing systems whose 
+    specifications are expressed in Signal Temproal Logic. The Online Monitor 
+    saved up to 24% simulation time with minimal overhead. This work won the 
+    best paper award at Runtime Verification, 2015.<br>
+    <br>
+    <strong>Compositional Synthesis from Linear Temporal Logic Primitives</strong><br>
+    We are developing a tool which takes as input a Linear Temporal Logic 
+    specification and uses a structural mapping approach (similar to DAGON) to 
+    map the specification to LTL primitives in a library. This approach is able 
+    to handle specification more general than GR1 specifications and at the same
+    time reduce the doubly exponential complexity of synthesis from LTL.<br>
+    <br>
+    <strong>Maintenance of Components in Safety Critical Hybrid Systems</strong><br>
+    We are looking at the problem of maintence of components in a Power System. 
+    We first model the components using graphical models and identify its 
+    acceptable behaviors. We then design monitors which tracks the behavior of 
+    the components during its operation and identify which components need 
+    maintenance ahead of time.
   </p>
 
+  <h2>Publications</h2>
   <p>
-    <strong>Study Interests</strong></br>
-    Javascript without <a href="http://vanilla-js.com/">jQuery</a>. Lorem Ipsum generators. Bands that don't exist yet.
-  </p>
-
-  <p>
-    <strong>Projects</strong></br>
-    <a href="http://aweso.me/">Awesome Project</a>. Just some jQuery lib.
-    <br>My band, on weekends. <a href="https://google.com/search?q=my+band">The Big Band Theory</a>
+    <a href="./assets/papers/ghosh-hscc2016-arxiv.pdf">Diagnosis and Repair for Synthesis from Signal Temporal Logic Specifications</a><br>
+    <strong>S. Ghosh</strong>, D. Sadigh, P. Nuzzo, V. Raman, A. Donze, A. Sangiovanni Vincentelli, S. Sastry and S. Seshia<br>
+    HSCC, Vienna, Austria. Apr 2016 (passed Repeatibility Evaluation).<br>
+    <br>
+    <a href="./assets/papers/rv15.pdf">Robust Online Monitoring of Signal Temporal Logic</a><br>
+    J. Deshmukh, A. Donze, <strong>S. Ghosh</strong>, X. Jin, G. Juniwal and S. Seshia,<br>
+    RV, Vienna, Austria. Sep 2015; <strong>Best Paper Award</strong><br>
+    <br>
+    <a href="./assets/papers/smartscan.pdf">SmartScan + OPMISR : A Novel Scan Compression Architecture for Multi-Site Testing</a><br>
+    R. Parekhji, R. Chandel, S. Ghosh, R. Suthapalli, G. Swathi and D.Gaur<br>
+    CDN Live Conference, Bangalore, India. Oct 2012; <strong>Best Paper Award</strong> in Digital Front End Track<br>
   </p>
 </section>

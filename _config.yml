@@ -1,20 +1,23 @@
 # main text of home
-name: Jane Doe
-bio: A Girl who travels the world eating noodles
+name: Shromona Ghosh
+bio: 'I am a PhD Candidate in the Electrical Engineering and Computer Science 
+Department, University of California at Berkeley, advised by Prof. Alberto 
+Sangiovanni-Vincentelli. Previously, I have interned at Texas Instruments 
+(Summer 2012), Cadence Design Systems (Summer 2014) and MSR (Summer 2017).'
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: PhD Candidate at UC Berkeley
 
 picture: assets/images/picture.jpg
 
-url: http://koppl.in/violet
+url: http://shromonaghosh.com
 # your url: http://USERNAME.github.io
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-github: mygithub
-email: me@jane.doe
+facebook: shromona.ghosh.50
+twitter: Shromona_Ghosh
+github: shromonag
+email: shromona.ghosh@berkeley.edu
 
 gems:
   - jekyll-seo-tag
