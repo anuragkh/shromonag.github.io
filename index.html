@@ -13,9 +13,10 @@ title: Shromona Ghosh
 
     <nav>
       <ul>
-        <li><a href="https://twitter.com/{{ site.twitter }}">twitter</a></li>
         <li><a href="https://github.com/{{ site.github }}">github</a></li>
         <li><a href="mailto:{{ site.email }}">email</a></li>
+        <li><a href="./assets/resume/ShromonaGhosh.pdf">resume</a></li>
+        <li><a href="https://twitter.com/{{ site.twitter }}">twitter</a></li>
       </ul>
     </nav>
   </center>
@@ -25,73 +26,94 @@ title: Shromona Ghosh
   <h2>About</h2>
   <p>
     I am a PhD Candidate in the Electrical Engineering and Computer Science 
-    Department, University of California at Berkeley, advised by Prof. Alberto 
-    Sangiovanni-Vincentelli. Previously, I have interned at Texas Instruments 
-    (Summer 2012), Cadence Design Systems (Summer 2014) and MSR (Summer 2017).<br>
+    Department, University of California at Berkeley, advised by Prof. Sanjit Seshia and
+    Prof. Alberto Sangiovanni-Vincentelli. I also work closely with Prof, Claire Tomlin.
+    Previously, I have interned at Texas Instruments 
+    (Summer 2012), Cadence Design Systems (Summer 2014), Micrsoft AI Research Labs (Summer 2017) 
+    and Stanford Research Institute (Summer 2018).<br>
     <br>
-    I am broadly interested in Safe Learning, Control Theory, Formal Methods, 
-    System Identification, Synthesis and Verification, Cyber Physical Systems 
-    and Data Driven Design.
+    My research interests lie in the intersection of Formal Methods (Verification and Synthesis), 
+    Control Theory and Machine Learning (ML). Particularly, my research focuses on:<br>
+  </p>
+  <p>
+    <span>&#8226;</span> Developing formal analysis techniques and tools for analyzing safety-critical systems with 
+      ML components such as Perception Systems, Reinforcement Learning Controllers, Data-Driven 
+      system models <br>
+    
+    <span>&#8226;</span> Utilize the analysis techniques to build robust and safe controllers for safety-critical 
+      autonomous systems <br>
+    
+    <span>&#8226;</span> Bridging the simulation to real-world gap to provide safety guarantees <br>
   </p>
 
-  <h2>Projects</h2>
+  <h2>Conference Publications</h2>
   <p>
-    <strong>System Identification from Data for Safe Learning</strong><br>
-    We are exploring the problem of modeling unknown dynamics in hybrid systems 
-    from historical and run time data while guaranteeing safety. We are 
-    considering both supervised and unsupervised learning based on the system 
-    domain. Due to the uncertainities in the unknown part of the system, we are 
-    looking into probabilitic models such as Markov Chains and Neural Networks 
-    and learnig specifications on the model in Probabilitic Signal Temporal 
-    Logic (PrSTL) which can be used for synthesis and verification purposes.<br>
+    <a href="https://arxiv.org/pdf/1808.07921.pdf"><strong>SOTER: Programming Safe Robotics System using Runtime Assurance</strong></a><br>
+    A. Desai, <i><b>S. Ghosh</b></i>, S. Seshia, N. Shankar, A. Tiwari<br>
+    arXiv Preprint 2018.<br>
     <br>
-    <strong>Diagnosis and Repair of Specifications for Controller Synthesis</strong><br>
-    We diagnose failures expressed in Signal Temporal Logic in a reactive 
-    control algorithm. Our tool, DiaRY, identifies the causes of infeasibility 
-    in the specifications and provides minimal timing and predicate repairs to 
-    make the controller synthesis problem feasible. This work was presented in 
-    Hybrid Systems: Computation and Control, 2016.<br>
+    <a href="https://arxiv.org/pdf/1802.04929.pdf"><strong>Context-Specific Validation of Data-Driven Models</strong></a><br>
+    S. Bansal*, <i><b>S. Ghosh*</b></i>, A. Sangiovanni-Vincentelli, S.A. Seshia and C.J. Tomlin<br>
+    arXiv Preprint 2018.<br>
     <br>
-    <strong>Requirement Engineering using Contracts</strong><br>
-    We are currently working on building a tool which could help us reason with 
-    contracts or specifications expressed in different mathematical formalisms 
-    (such as Linear Temporal Logic, Signal Temporal Logic). The tool would help 
-    the designer reason about the compatibility, consistency and realizability 
-    of specifications.<br>
+    <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2018/EECS-2018-8.pdf"><strong>Scenic: A language for Scenario Specification and Scene Generation</strong></a><br>
+    D. Fremont, X. Yue, T. Dreossi, <i><b>S. Ghosh</b></i>, A. Sangiovanni-Vincentelli, S. A. Seshia<br>
+    ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI) 2019 (In Subimssion)<br>
     <br>
-    <strong>Robust Online Monitoring of Signal Temporal Logic</strong><br>
-    We developed an Online Monitor in C++ for testing systems whose 
-    specifications are expressed in Signal Temproal Logic. The Online Monitor 
-    saved up to 24% simulation time with minimal overhead. This work won the 
-    best paper award at Runtime Verification, 2015.<br>
+    <a href="https://arxiv.org/pdf/1802.08678.pdf"><strong>Verifying Controllers Against Adversarial Examples with Bayesian Optimization</strong></a><br>
+    <i><b>S. Ghosh</b></i>, F. Berkenkamp, G. Ranade, S. Qadeer, A. Kapoor<br>
+    International Conference on Robotics and Automation (ICRA), 2018<br>
     <br>
-    <strong>Compositional Synthesis from Linear Temporal Logic Primitives</strong><br>
-    We are developing a tool which takes as input a Linear Temporal Logic 
-    specification and uses a structural mapping approach (similar to DAGON) to 
-    map the specification to LTL primitives in a library. This approach is able 
-    to handle specification more general than GR1 specifications and at the same
-    time reduce the doubly exponential complexity of synthesis from LTL.<br>
+    <a href="https://arxiv.org/pdf/1802.08678.pdf"><strong>Formal Specification for Deep Neural Networks</strong></a><br>
+    S. Seshia, A. Desai, T. Dreossi, D. Fremont, <i><b>S. Ghosh</b></i>, E. Kim, S. Shivakumar, M. Vazquez-Chanlatte, X. Yue<br>
+    International Symposium on Automated Technology for Verification and Analysis (ATVA), 2018 (invited paper)<br>
     <br>
-    <strong>Maintenance of Components in Safety Critical Hybrid Systems</strong><br>
-    We are looking at the problem of maintence of components in a Power System. 
-    We first model the components using graphical models and identify its 
-    acceptable behaviors. We then design monitors which tracks the behavior of 
-    the components during its operation and identify which components need 
-    maintenance ahead of time.
+    <a href="https://arxiv.org/pdf/1805.06962.pdf"><strong>Counterexample-Guided Data Augmentation</strong></a><br>
+    T. Dreossi, <i><b>S. Ghosh</b></i>, X. Yue, K. Kuetzer, A. Sangiovanni-Vincentelli, S. Seshia <br>
+    International Joint Conference on Artificial Intelligence (IJCAI), 2018<br>
+    <br>
+    <a href="https://arxiv.org/pdf/1802.08924.pdf"><strong>Time Series Learning using Monotonic Logical Properties</strong></a><br>
+    M. Vazquez-Chanlatte, <i><b>S. Ghosh</b></i>, J. Deshmukh, A. Sangiovanni-Vincentelli, S. Seshia <br>
+    International Conference on Runtime Verification (RV), 2018<br>
+    <br>
+    <a href="https://people.eecs.berkeley.edu/~sseshia/pubdir/adhs18.pdf"><strong>Dominant Strategies for Continuous Two-Player Zero-Sum Games</strong></a><br>
+    M. Vazquez-Chanlatte, <i><b>S. Ghosh</b></i>, V. Raman, A. Sangiovanni-Vincentelli, S. Seshia <br>
+    FAC Conference on Analysis and Design of Hybrid Systems (ADHS), 2018<br>
+    <br>
+    <a href="https://arxiv.org/pdf/1602.01883.pdf"><strong>Diagnosis and Repair for Synthesis from Signal Temporal Logic Specifications</strong></a><br>
+    <i><b>S. Ghosh</b></i>, D. Sadigh, P. Nuzzo, V. Raman, A. Donze, A. Sangiovanni Vincentelli, S. Sastry and S. Seshia<br>
+    ACM International Conference on Hybrid Systems Computation and Control (HSCC), 2016 (passed Repeatibility Evaluation).<br>
+    <br>
+    <a href="https://arxiv.org/pdf/1506.08234.pdf"><strong>Robust Online Monitoring of Signal Temporal Logic</strong></a><br>
+    J. Deshmukh, A. Donze, <i><b>S. Ghosh</b></i>, X. Jin, G. Juniwal and S. Seshia<br>
+    International Conference on Runtime Verification (RV), 2015 <br>
+    <b>Best Paper Award</b><br>
   </p>
 
-  <h2>Publications</h2>
+  <h2>Journal  Publications</h2>
   <p>
-    <a href="./assets/papers/ghosh-hscc2016-arxiv.pdf">Diagnosis and Repair for Synthesis from Signal Temporal Logic Specifications</a><br>
-    <strong>S. Ghosh</strong>, D. Sadigh, P. Nuzzo, V. Raman, A. Donze, A. Sangiovanni Vincentelli, S. Sastry and S. Seshia<br>
-    HSCC, Vienna, Austria. Apr 2016 (passed Repeatibility Evaluation).<br>
-    <br>
-    <a href="./assets/papers/rv15.pdf">Robust Online Monitoring of Signal Temporal Logic</a><br>
-    J. Deshmukh, A. Donze, <strong>S. Ghosh</strong>, X. Jin, G. Juniwal and S. Seshia,<br>
-    RV, Vienna, Austria. Sep 2015; <strong>Best Paper Award</strong><br>
-    <br>
-    <a href="./assets/papers/smartscan.pdf">SmartScan + OPMISR : A Novel Scan Compression Architecture for Multi-Site Testing</a><br>
-    R. Parekhji, R. Chandel, S. Ghosh, R. Suthapalli, G. Swathi and D.Gaur<br>
-    CDN Live Conference, Bangalore, India. Oct 2012; <strong>Best Paper Award</strong> in Digital Front End Track<br>
-  </p>
-</section>
+      <a href="https://arxiv.org/pdf/1809.00706.pdf"><strong>A Minimum Discounted Reward Hamilton-Jacobi Formulation for Computing Reachable Sets</strong></a><br>
+      A. Akametalu, <i><b>S. Ghosh</b></i>, J. Fisac, C. Tomlin<br>
+      IEEE Transactions on Automatic Control (TAC), 2019 (Under Review)<br>
+
+      <a href="https://arxiv.org/pdf/1506.08234.pdf"><strong>Robust Online Monitoring of Signal Temporal Logic</strong></a><br>
+      J. Deshmukh, A. Donze, <i><b>S. Ghosh</b></i>, X. Jin, G. Juniwal and S. Seshia<br>
+      Formal Methods in System Design (FMSD), 2017<br>
+  </p> 
+  <h2>Workshop  Publications</h2>
+  <p>
+      <a href="https://people.eecs.berkeley.edu/~tommasodreossi/papers/rmlw2017.pdf"><strong>Testing of Convolutional Neural Networks for Autonomous Driving</strong></a><br>
+      T. Dreossi*, <i><b>S. Ghosh*</b></i>, A. Sangiovanni-Vincentelli, S. Seshia <br>
+      Reliable Machine Learning in the Wild (RMLW) Workshop at
+    International Conference on Machine Learnin (ICML), 2017<br>
+
+  </p> 
+
+  <h2>Industrial  Publications</h2>
+  <p>
+    <strong>SmartScan + OPMISR : A Novel Scan Compression Architecture for Multi-Site Testing</strong><br>
+    R. Parekhji, R. Chandel, <i><b>S. Ghosh</b></i>, R. Suthapalli, G. Swathi and D.Gaur<br>
+    Cadence (CDN) Live Conference 2012 <br>
+    <b>Best Paper Award</b> in Digital Front End Track<br>
+  </p> 
+  </section>
